@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="profile.css">
+        <title> User Profile </title>
+        <link rel="shortcut icon" href="image/logo.png"/>
+    </head>
+    <body>
+    <header>
+        <div class="header">
+            <!-- logo -->
+            <img src="image/logo.png" alt="logo">
+            <!-- navigation bar -->
+            <nav>
+                <ul class = "navbar">
+                    <!-- navigation links -->
+                    <li><a href="../Student_2/home.html">Home</a></li>
+                    <li><a href="../Student_1/products.html">Buy Products</a></li>
+                    <li><a href="../Student_2/feedback.html">Feedback Form</a></li>
+                    <li><a href="../Student_3/team.html">About Us</a></li>
+                    <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                    <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+                    <li><a href="../Student_3/profile.html" class="active">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+            <div class="content-wrap">
+
+
+        <h1> User Profile </h1>
+        <div class="ProgressStatus">
+            Profile Completed: <span id="progressText" class="progress-text">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="welcome">
+            <p> Click Below Button to Create a User Profile</p>
+        </div>
+        <div class="StartButton">
+
+            <button onclick="step1()"> Start</button>
+        </div>
+        <fieldset>
+            <legend> Personal Details</legend>
+            <div class="userPersonal">
+                <p> <strong> Name : </strong>
+                    <span id="UserName"></span>
+                </p>
+            
+                <p> <strong> Surname : </strong>
+                    <span id="UserSurname"></span>
+                </p>
+            
+                <p> <strong> Age: </strong>
+                    <span id="UserAge"></span>
+                </p>
+            
+                <p> <strong> Gender: </strong>
+                    <span id="UserGender"></span>
+                </p>
+            
+                <p> <strong> Agree With Terms : </strong>
+                    <span id="UserAgree"></span>
+                </p>
+            </div>
+        </fieldset>
+        <div class="Step2Button">
+
+            <button onclick="step2()">Step 2 : Add Qulification</button>
+        </div>
+
+        <fieldset>
+            <legend> Qulification</legend>
+            <div class="userIntrests">
+                <p> <strong> Area of study : </strong>
+                    <span id="study"></span>
+                </p>
+                        
+                <p> <strong> Highest degree : </strong>
+                    <span id="degree"></span>
+                </p>
+                        
+                <p> <strong> University/Instatution: : </strong>
+                    <span id="University"></span>
+                </p>
+                        
+                <p> <strong> Completion : </strong>
+                    <span id="Completion"></span>
+                </p>
+                        
+                <p> <strong> Location : </strong>
+                    <span id="Location"></span>
+                </p>
+            </div>
+        </fieldset>
+        <div class="Step3Button">
+
+            <button onclick="step3()">Step 3 : Add Contact Information</button>
+        </div>
+
+        <fieldset>
+            <legend> Contact Information </legend>
+            <div class="userContact">
+                <p> <strong> Mobile Number : </strong>
+                    <span id="Mobile"></span>
+                </p>
+                        
+                <p> <strong> Email : </strong>
+                    <span id="Email"></span>
+                </p>
+                        
+                <p> <strong> LinkedIn : </strong>
+                    <span id="Linked"></span>
+                </p>
+                        
+                <p> <strong> Country : </strong>
+                    <span id="Country"></span>
+                </p>
+            </div>
+        </fieldset>
+        <div class="UserEdit">
+
+            <button onclick="UserEditChoise()">Edit above Details </button>
+        </div>
+
+        <div class="EditStep1">
+
+            <button onclick="Editstep1()">Edit Step 1 : Personal Details </button>
+        </div>
+        <div class="EditStep2">
+
+            <button onclick="Editstep2()">Edit Step 2 : Voluntering Tasks </button>
+        </div>
+        <div class="EditStep3">
+
+            <button onclick="Editstep3()">Edit Step 3 : Contact Information </button>
+        </div>
+
+        <div class="Submit">
+
+            <button onclick="SubmitDetails()">Submit </button>
+        </div>
+
+        <div class="popupwindow">
+            <h2>Profile Created Suessfully! </h2>
+            <p> Thank You</p>
+            <button onclick="PopUp()"> View Profile </button>
+        </div>
+        </div>
+    </div>
+
+        <script src="profile.js"></script>
+
+    <!-- footer section -->
+    <footer>
+        <div class="editor">
+            <a href="./page_editor.html">Page editor : Sanuda Wijethunga</a>
+        </div>
+        <div class="footernavbar">
+            <!-- footer Navigation links-->
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="../Student_3/team.html">About Us</a></li>
+                <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="contentfooter">
+            <p>Copyright &copy; 2024 WILD PULSE. All rights reserved</p>
+        </div>
+    </footer>
+    </body>
+</html>
+
+

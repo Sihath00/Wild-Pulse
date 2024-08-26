@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header img{
+    width: 100px;
+}
+.navbar li{ 
+    list-style-type: none;
+    display: inline;
+}
+.navbar li a {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar li ::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+}
+.navbar li :hover::before{
+    width: 100%;
+}
+.navbar li .active{
+    background-color: rgb(51, 152, 14);
+    padding: 10px;
+    
+}
+
+body{
+    background-image: url(image/background2.jpeg);
+}
+ 
+.container{
+    padding-top: 100px;
+}
+.container h1{
+    text-align: center;
+}
+
+.content1{
+    width: 80%;
+    display: flex;
+}
+
+.content1 .contentimg img{
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.content1 .content-text{
+    font-size: 20px;
+    padding-top: 150px;
+    padding-left: 80px;
+    font-weight: bold;
+}
+.content1 .content-text p{
+    padding-bottom: 30px;
+}
+
+hr{
+    margin-top: 40px;
+}
+
+.content2{
+    text-align: center;
+}
+.content2 h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.content2 p{
+    padding-bottom: 20px;
+}
+
+.content3{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.content3 h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content3 p{
+    padding-bottom: 20px;
+}
+
+.content3 h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer{
+    top: 0;
+    border: 3px solid black;
+    padding: 80px 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.footernavbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.footernavbar ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernavbar ul li a:hover{
+    opacity: 8;
+}
+
+.contentfooter{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.editor{
+    justify-content: center;
+    display: flex;
+}
+.editor a{
+    color: white;
+    padding: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.editor a:hover{
+    opacity: 10;
+}

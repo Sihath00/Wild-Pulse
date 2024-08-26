@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Splash_Screen.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Wild Pulse</title>
+    <link rel="shortcut icon" href="pictures/logo.png" />
+</head>
+<body>
+<div id="video-container">
+    <video autoplay muted loop id="video-bg">
+        <source src="videos/splash2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="splash">
+    <div class="splash-inner">
+        <h1 class="website-title">Sustainable Development Goal 15</h1>
+        <p class="mission">Promoting Sustainable Land Use and Biodiversity Conservation</p>
+        <div class="group-members">
+            <h2>Our Team:</h2>
+            <ul>
+                <li>Student One - Sihath Senarath</li>
+                <li>Student Two - Sanuda Wijethunga</li>
+                <li>Student Three - Minthaj Ammer</li>
+                <li>Student Four - Radev Perera</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = "../Student_2/home.html";// Redirect after 4 seconds
+        }, 5000);
+    </script>
+    <div class="loader"></div>
+</div>
+</body>
+</html>

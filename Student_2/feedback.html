@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- linking the CSS stylesheet -->
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+        <div class="header">
+            <!-- logo -->
+            <img src="images/logo.png" alt="logo">
+            <nav>
+                <!-- navigation bar -->
+                <ul class = "navbar">
+                    <!-- navigation links -->
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="../Student_1/products.html">Buy Products</a></li>
+                    <li><a href="./feedback.html" class="active">Feedback Form</a></li>
+                    <li><a href="../Student_3/team.html">About Us</a></li>
+                    <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                    <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+                    <li><a href="../Student_3/profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- content -->
+    <div class="box">
+        <h1>Drop Your Feedback With Us!</h1>
+        <h2>Feedback Form</h2>
+        <br>
+        <div class="content">
+            <!-- form -->
+            <div class="feedback_form">
+                <form method="post" id="feedback-form-container">
+                    <p>Required fields<sup>*</sup></p>
+                    <br>
+                    <!-- get user inputs -->
+                    <div class="personal_data">
+                        <div class="input">
+                            <label for="firstname"><sup>*</sup>First name :</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter your name here" required>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <label for="lastname"><sup>*</sup>Last name :</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter your surname here" required>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <label for="email"><sup>*</sup>Email :</label>
+                            <input type="text" name="email" id="email" placeholder="Enter your e-mail here" required>
+                        </div>
+                    </div>
+
+                    <!-- radio inputs -->
+                    <div class="otherinput">
+                        <br>
+                        <label>Was this your first time visiting?</label>
+                        <br><br>
+                        <input type="radio" name="visiting" id="visitingyes" value="Yes">
+                        <label for="visitingyes">Yes</label>
+                        <input type="radio" name="visiting" id="visitingno" value="No">
+                        <label for="visitingno">No</label>
+                        <br><br><br>
+                        <label>Was this website informative and easy to navigate through?</label>
+                        <br><br>
+                        <input type="radio" name="websitefeedback" id="websitefeedbackyes" value="Yes">
+                        <label for="websitefeedbackyes">Yes</label>
+                        <input type="radio" name="websitefeedback" id="websitefeedbackno" value="No">
+                        <label for="websitefeedbackno">No</label>
+                        <br><br><br>
+                        <label>How satisfied are you with Our services? Choose from 1 to 10, With
+                            being 1 "Not satisfied at all!"
+                            and 10 being "Extremly satisfied!"
+                        </label>
+                        <br>
+                        <br>
+                        <!-- rating -->
+                        <div class="rating">
+                            <label for="satificationlevel1">1</label>
+                            <input type="radio" name="satificationlevel" id="satificationlevel1" value="1">
+                            <label for="satificationlevel2">2</label>
+                            <input type="radio" name="satificationlevel" id="satificationlevel2" value="2">
+                            <label for="satificationlevel3">3</label>
+                            <input type="radio" name="satificationlevel" id="satificationlevel3" value="3">
+                            <label for="satificationlevel4">4</label>
+                            <input type="radio" name="satificationlevel" id="satificationlevel4" value="4">
+                            <label for="satificationlevel5">5</label>
+                            <input type="radio" name="satificationlevel" id="satificationlevel5" value="5">
+                        </div>
+                        <br><br>
+
+                        <label>Would you recommend our services?</label>
+                        <br><br>
+                        <input type="radio" name="recommendornot" id="recommendyes" value="Yes">
+                        <label for="recommendyes">Yes</label>
+                        <input type="radio" name="recommendornot" id="recommendno" value="No">
+                        <label for="recommendno">No</label>
+                        <br><br><br>
+                        <!-- text area -->
+                        <label>Do you have any additional questions or requests?</label>
+                        <br><br>
+                        <textarea class="additionalinfo" cols="30" rows="5"
+                            placeholder="Add your message here..."></textarea>
+                        <br><br>
+                        <!-- buttons -->
+                        <div class="button">
+                            <button type="submit" class="button1">Preview</button>
+                            <button type="reset" class="button2">Reset</button>
+                            <button type="submit" class="button3">Submit your feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--image_right-->
+            <div class="right_content"></div>
+        </div>
+    </div>
+
+    <!-- preview window -->
+    <div id="feedback-dialog" class="dialog">
+        <span class="close-btn">&times;</span>
+        <h2>Feedback Responses preview</h2>
+        <p id="feedback-response"></p>
+        <p class="edit">You Can close the window and edit your responses or submit your feedback.</p>
+    </div>
+    <div id="preview-container"></div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="editor">
+            <a href="page_editor.html">Page editor : Sanuda Wijethunga</a>
+        </div>
+        <div class="footernavbar">
+            <!-- footer Navigation links-->
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="../Student_3/team.html">About Us</a></li>
+                <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="contentfooter">
+            <p>Copyright &copy; 2024 WILD PULSE. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- scroll to top button -->
+    <button class="scrol_top_button">
+        <img src="images/icons8-up.png" alt="arrowupscrol">
+    </button>
+
+    <!-- javaScript file -->
+    <script src="srollbutton.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

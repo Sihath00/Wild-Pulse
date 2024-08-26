@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/3c3e489cf2.js" crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>
+    <link rel="shortcut icon" href="../Student_2/images/logo.png" />
+    <style>
+        /* Additional styles for "Our Products" section */
+        .products-section {
+            background-color: transparent;
+            padding: 1px 1px; /* Adjusted padding */
+            text-align: center;
+            margin-top: 100px; /* Adjusted margin */
+            margin-bottom: 0px; /* Adjusted margin */
+        }
+        .products-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .products-section p {
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <!-- logo -->
+        <img src="../Student_2/images/logo.png" alt="logo">
+        <!-- navigation bar -->
+        <nav>
+            <ul class = "navbar">
+                <!-- navigation links -->
+                <li><a href="../Student_2/home.html">Home</a></li>
+                <li><a href="../Student_1/products.html" class="active">Buy Products</a></li>
+                <li><a href="../Student_2/feedback.html">Feedback Form</a></li>
+                <li><a href="../Student_3/team.html">About Us</a></li>
+                <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+                <li><a href="../Student_3/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- Our Products Section -->
+<div class="products-section">
+    <h2 style="color: white; font-size: 45px">Our Products</h2> <br>
+    <p style="color: white; font-size: 25px">Welcome to our selection of high-quality products. Browse through our catalog to find what you need!</p>
+</div>
+
+<div class="container">
+    <div id="root"></div>
+    <!-- Creating the cart as a sidebar -->
+    <div class="sidebar">
+        <div class="head">My Cart
+            <!-- putting the image cart and the count -->
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count" > 0</p></div>
+        </div>
+        <div id="cartitem">Your Cart is Empty</div>
+        <div class="foot">
+            <!-- mcreating the total equals to 0 -->
+            <h3>Total</h3>
+            <h2 id="total">LKR 0.00</h2>
+        </div>
+        <form id="form">
+            <!-- button to proceed to checkout page -->
+            <input class="btn" type="submit" id="submit" name="placeOrder" value="Proceed To checkout" onclick="return check()">
+        </form>
+        <div class="data">
+            <ul>
+                <!-- conditions of the carts -->
+                <li>Your product will be delivered within 2 - 3 working days.</li>
+                <br><li>Card Payment Only.</li>
+                <br><li>You will be receiving a confirmation call once the order is received.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="products.js"></script>
+
+<footer>
+    <div class="editor">
+        <a href="./page_editor.html">Page editor : Sihath Senarath</a>
+    </div>
+    <div class="footernavbar">
+        <!-- footer Navigation links-->
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="../Student_3/team.html">About Us</a></li>
+            <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+            <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="contentfooter">
+        <p>Copyright &copy; 2024 WILD PULSE. All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* style srolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* background image */
+body{
+    background-image: url(images/additional_page_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s;
+}
+
+/* animation up down */
+@keyframes upDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(30px); /* End position */
+    }
+}
+
+/* style the header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* style the logo */
+.header img{
+    width: 100px;
+}
+
+/* style link text */
+.navbar li{
+    list-style-type: none;
+    display: inline;
+}
+.navbar li a {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+/* nav bar hover */
+.navbar li ::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+}
+.navbar li :hover::before{
+    width: 100%;
+}
+
+/* nav bar active */
+.navbar li .active{
+    background-color: rgb(51, 152, 14);
+    padding: 10px;
+}
+
+/* style content 1 h1 */
+.content1 h1{
+    padding-top: 350px;
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: upDown 2s ease infinite alternate;
+}
+
+/* style content 1 p */
+.content1 p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+/* style content 1 button */
+.content1 a{
+    display: block;
+    margin-top: 50px;
+    margin-left: 680px;
+    padding: 15px;
+    font-size: 15px;
+    background: rgb(227, 221, 221);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    width: 170px;
+    text-align: center;
+}
+/* hover effect */
+.content1 a:hover{
+    background-color: white;
+}
+
+/* style content 2 */
+.content2{
+    padding-top: 500px;
+    padding-bottom: 100px;
+}
+
+/* style content-left h2 */
+.content2-left h2{
+    font-size: 45px;
+    margin-left: 610px;
+}
+
+/* style content-left p */
+.content2-left p{
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 100px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* gallery */
+.content3{
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bgtexture.png);
+    background-color: black;
+}
+/* gallery cards */
+.wrapper{
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* styles individual gallery cards */
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0px 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+/* styles for the path section in each card */
+.card > .path{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Styles for the icon within the path */
+.card > .path > .icon{
+    background: black;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+/* styles the description within the path */
+.card > .path > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease;
+}
+
+/* styles description paragraphs */
+.description p{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+/* hide the input elements */
+input{
+    display: none;
+}
+
+/* show the expanded card when clicked */
+input:checked + label{
+    width: 800px;
+}
+
+/* the description when input is checked */
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* background images for each card */
+.card[for ="card1"]{
+    background-image: url(images/sinharaja_forest.jpg);
+}
+
+.card[for ="card2"]{
+    background-image: url(images/kanneliya_forest.jpeg);
+}
+
+.card[for ="card3"]{
+    background-image: url(images/MAKANDAWA_FOREST_RESERVE.jpeg);
+}
+
+.card[for ="card4"]{
+    background-image: url(images/Knuckles_Mountain_Range.jpg);
+}
+
+.card[for ="card5"]{
+    background-image: url(images/Ritigala-Sri-Lanka.jpg);
+}
+
+/* donate */
+.content4{
+    margin-top: 100px;
+}
+.content4-left{
+    padding-left: 100px;
+}
+.content4-left p{
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.content4-left h2{
+    font-size: 40px;
+    /*animation: upDown 2s ease infinite alternate;*/
+}
+
+/*Style the donate form*/
+form{
+    margin-top: 50px;
+    width: 40%;
+}
+
+.content4 input{
+    display: inline;
+}
+
+.textinput input{
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2.5px solid #adadad;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+form input:focus{
+    border-color: rgb(51, 152, 14);
+}
+
+/* styles the donate image */
+.content4-right img{
+    float: right;
+    width: 650px;
+    height: 390px;
+    margin-right: 100px;
+    margin-top: -450px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+/* styles the donate button */
+form a{
+    border-radius: 10px;
+    padding: 15px 50px;
+    background-color: #adadad;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 50px;
+}
+/* hover effect */
+form a:hover{
+    background-color: rgb(127, 222, 93);
+}
+
+.content4 hr{
+    margin-top: 100px;
+}
+
+/* about us */
+.content5{
+    top: 0;
+    background-image: url(images/bgtexture.png);
+    background-color: black;
+    color: white;
+}
+
+/* about us heading */
+.content5 h2{
+    padding-top: 80px;
+    padding-left: 100px;
+    font-size: 40px;
+    /*animation: upDown 2s ease infinite alternate;*/
+}
+
+/* about us paragarph */
+.content5 p{
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* about us image */
+.content5 img{
+    padding-left: 100px;
+    margin-top: 40px;
+    width: 93%;
+    height: 700px;
+}
+
+.content5 hr{
+    margin-top: 80px;
+}
+
+/* section 4 styles */
+#section4{
+    padding-top: 80px;
+}
+
+/* style the auto scrol button */
+.scrol_top_button{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style the footer */
+footer{
+    border: none;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+}
+
+/* ajust the footer content */
+.footernavbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+/* style links */
+.footernavbar ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/* hover effect */
+.footernavbar ul li a:hover{
+    opacity: 8;
+}
+
+/* copyright content*/
+.contentfooter{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* style page editor detail */
+.editor{
+    justify-content: center;
+    display: flex;
+}
+
+/* style page editor link */
+.editor a{
+    color: white;
+    padding: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+/* hover effect */
+.editor a:hover{
+    opacity: 10;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

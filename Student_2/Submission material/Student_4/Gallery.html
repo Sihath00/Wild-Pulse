@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+
+<body>
+
+<header>
+    <div class="header">
+        <!-- logo -->
+        <img src="images/logo.png" alt="logo">
+        <!-- navigation bar -->
+        <nav>
+            <ul class = "navbar">
+                <!-- navigation links -->
+                <li><a href="../Student_2/home.html">Home</a></li>
+                <li><a href="../Student_1/products.html">Buy Products</a></li>
+                <li><a href="../Student_2/feedback.html">Feedback Form</a></li>
+                <li><a href="../Student_3/team.html">About Us</a></li>
+                <li><a href="../Student_4/Sitemap.html">Site Map</a></li>
+                <li><a href="../Student_4/Gallery.html" class="active">Gallery</a></li>
+                <li><a href="../Student_3/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!--MAIN HEADING TEXT-->
+    <div class="maintext">
+        <div class="heading">
+            <h1>GALLERY</h1>
+        </div>
+    </div>
+
+    <!--COLOR AND FONT SELECTOR-->
+    <div class="options">
+        <label for="background-color"></label>
+        <input type="color" id="background-color">
+        <br>
+        <label for="font-family"></label>
+        <select id="font-family">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Reddit Mono">Reddit Mono</option>
+        </select>
+    </div>
+
+    <!--SLIDER-->
+    <div class="slider">
+        <!--IMAGES-->
+        <div class="list">
+            <div class="item active">
+                <img src="Images/moutains.jpg" alt="Mountains">
+                <div class="content">
+                    <h2>Mountains</h2>
+                    <p>
+                    Rising proudly against the skyline, the mountain captivates with its rugged beauty. Wrapped in blankets of snow and lush forests, it stands as a testament to nature's artistry. Its slopes offer a playground for adventurers, while its serene valleys beckon those in search of solace. Each contour tells a story of resilience and timelessness, a reminder of the majesty and power of the natural world.
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/desert.jpg" alt="Desert">
+                <div class="content">
+                    <h2>Deserts</h2>
+                    <p>
+                    Unfolding beneath the vast expanse of the sky, the desert captivates with its stark beauty. Endless dunes roll like waves frozen in time, punctuated by sparse vegetation clinging to life. In its solitude, the desert whispers tales of survival and resilience, its arid landscape holding secrets waiting to be discovered. Amidst its starkness, there lies a profound sense of serenity and wonder, reminding us of nature's enduring power and beauty.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/tusker.jpg" alt="Tusker">
+                <div class="content">
+                    <h2>Tusker</h2>
+                    <p>
+                    Tuskers, with their magnificent tusks and commanding presence, epitomize the majestic essence of elephants. Roaming Africa and Asia's landscapes, they leave an indelible mark on both the terrain and those who encounter them. Despite being targeted by poachers for their ivory tusks, tuskers exhibit remarkable intelligence and emotional depth, forming strong bonds within their social groups. As ambassadors for wildlife conservation, they inspire admiration and reverence for the natural world.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/giraffe.jpg" alt="Giraffe">
+                <div class="content">
+                    <h2>Giraffe</h2>
+                    <p>
+                    The giraffe, with its long neck and distinctive coat, gracefully roams Africa's savannas. Its elegant movements and gentle demeanor symbolize the serenity of the wilderness. Despite threats from habitat loss and poaching, the giraffe remains a resilient icon of Africa's beauty, highlighting the importance of conservation efforts.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/gorilla.jpg" alt="Gorilla">
+                <div class="content">
+                    <h2>Gorilla</h2>
+                    <p>
+                    Majestic and powerful, the gorilla is a formidable presence in Africa's dense forests. With its robust build and distinctive silverback, it commands respect as the largest primate on Earth. Beyond physical prowess, gorillas exhibit remarkable intelligence and emotion, forging bonds within family groups akin to our own. Despite threats from habitat loss and poaching, conservation efforts offer hope for their survival. As guardians of the forest, gorillas maintain delicate ecosystems, serving as ambassadors for wildlife protection and nature preservation.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/trees.jpg" alt="Trees">
+                <div class="content">
+                    <h2>Forests</h2>
+                    <p>
+                    Forests, the earth's heartbeat, envelop the landscape in vibrant green, teeming with life. Towering trees form a majestic canopy, filtering sunlight into dappled patterns on the forest floor. Rustling leaves and chirping birds create a symphony of sounds, while the earthy scent of moss invigorates the senses. Within, a diverse ecosystem thrives, from insects to noble beasts, each vital to nature's intricate web. Amidst ancient trees and winding trails lies a sanctuary of tranquility, a reminder of nature's resilience and beauty.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--BUTTONS-->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+        <!--THUMBNAILS-->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="Images/moutains.jpg" alt="Mountains">
+                <div class="content">
+                    Mountains
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/desert.jpg" alt="Desert">
+                <div class="content">
+                    Desert
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/tusker.jpg" alt="Tusker">
+                <div class="content">
+                    Tusker
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/giraffe.jpg" alt="Giraffe">
+                <div class="content">
+                    Giraffe
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/gorilla.jpg" alt="Gorilla">
+                <div class="content">
+                    Gorilla
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/trees.jpg" alt="Trees">
+                <div class="content">
+                    Forests
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Gallery.js"></script>
+
+    <!-- footer section -->
+    <footer>
+        <div class="editor">
+            <a href="/Student_4/Page Editor.html">Page editor : Radev Perera</a>
+        </div>
+        <div class="footernavbar">
+            <!-- footer Navigation links-->
+            <ul>
+                <li><a href="/Student_2/home.html">Home</a></li>
+                <li><a href="/Student_3/team.html">About Us</a></li>
+                <li><a href="/Student_4/Sitemap.html">Site Map</a></li>
+                <li><a href="/Student_4/Gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="contentfooter">
+            <p>Copyright &copy; 2024 WILD PULSE. All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

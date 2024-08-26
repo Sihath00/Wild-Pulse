@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* style body */
+body{
+    font-family: "Times New Roman";
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    position: relative;
+    overflow-x: hidden;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* animation up down */
+@keyframes upDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(30px); /* End position */
+    }
+}
+
+/* animation fade in out */
+@keyframes fade-inout{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 200;
+    }
+}
+/* style the header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* style the logo */
+.header img{
+    width: 100px;
+}
+
+/* style link text */
+.navbar li{ 
+    list-style-type: none;
+    display: inline;
+}
+.navbar li a {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+/* nav bar hover */
+.navbar li ::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+}
+.navbar li :hover::before{
+    width: 100%;
+}
+
+/* nav bar active */
+.navbar li .active{
+    background-color: rgb(51, 152, 14);
+    padding: 10px; 
+}
+
+/* content styles */
+.content{
+    padding-left: 110px;
+    animation: fade-inout 5s 1 alternate;/*apply animation*/
+}
+/* content heading 1 */
+.content h1{
+    width: 100%;
+    color: white;
+    font-size: 70px;
+    padding-top: 300px;
+    margin-bottom: 0;
+}
+/* change the font color part of h1*/
+.content strong{
+    color: rgb(51, 152, 14);
+    z-index: 2;
+}
+/* content paragaph */
+.content p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* style hr */
+hr{
+    width: 100%;
+    color: rgb(104,103,87);
+    border: 3px solid;
+}
+.two_hr{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.mission{
+    margin-top: 0px;
+}
+
+/* mission heading */
+.mission h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* mission paragraph */
+.mission .paragraph{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 20px;
+}
+/* style background2 content */
+.background2{
+    background-color: black;
+    color: white;
+    margin-top: 390px;
+    background-image: url(images/bgtexture.png);
+}
+
+.background2 h2{
+    padding-top: 50px;
+}
+
+.background2 p{
+    line-height: 2;
+}
+
+/* individual pages heading */
+.individual_pages h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+ 
+/* styles invidual content page link elements */
+.Student1, .Student2, .Student3, .Student4{
+    color: rgb(255, 255, 255);
+    width: 265px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 105px 35px;
+    margin: 30px 45px;
+    box-shadow: 0px 10px 25px 0px rgba(88, 104, 62, 0.3);
+    transition: 1s; /* adding transition effect*/
+    margin-bottom: 180px;
+}
+
+/* hover Effect for student elements */
+.Student1:hover, .Student2:hover, .Student3:hover, .Student4:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+/* Style for Student1 box*/
+.Student1{
+    background-image: url(images/ocean.jpg);
+    background-size: cover;
+}
+
+/* Style for Student2 box*/
+.Student2{
+    background-image: url(images/MAKANDAWA_FOREST_RESERVE.jpeg);
+    background-size: cover;
+}
+/* Style for Student3 box*/
+.Student3{
+    background-image: url(images/island.jpg);
+    background-size: cover;
+}
+
+/* Style for Student4 box*/
+.Student4{
+    background-image: url(images/desert.jpg);
+    background-size: cover;
+}
+
+/* Style background3 content */
+.background3{
+    background-image: url(images/Backgroundimage.png);
+    background-size: 100%;
+    height: 500px;
+    padding-top: 100px;
+}
+
+/* style heading in Background 3 */
+.background3 h2{
+    margin-top: 50px;
+    color: white;
+    padding-left: 140px;
+    /*animation: upDown 2s ease infinite alternate;*/
+}
+/* style hontent in Background 3 */
+.background3 .background3_content1{
+    /*padding-top: 50px;*/
+    color: white;
+    font-size: 20px;
+    padding-left: 140px;
+}
+.background3 .background3_content2{
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding-left: 140px;
+}
+
+/* style in button in Background 3 */
+.background3 a{
+    background: transparent;
+    border: 2px solid rgb(51, 152, 14);
+    font-weight: bold;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 140px;
+    cursor: pointer;
+    display: block;
+    width: 180px;
+    text-decoration: none;
+}
+
+.background3 a:hover {
+    background-color: rgb(51, 152, 14);
+}
+
+/* style the auto scrol button */
+.scrol_top_button{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style the footer */
+footer{
+    border: none;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+}
+
+/* ajust the footer content */
+.footernavbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+/* style links */
+.footernavbar ul li a{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/* hover effect */
+.footernavbar ul li a:hover{
+    opacity: 8;
+}
+
+/* copyright content*/
+.contentfooter{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* style page editor detail */
+.editor{
+    justify-content: center;
+    display: flex;
+}
+
+/* style page editor link */
+.editor a{
+    color: white;
+    padding: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+/* hover effect */
+.editor a:hover{
+    opacity: 10;
+}

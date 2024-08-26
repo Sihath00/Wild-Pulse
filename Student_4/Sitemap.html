@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="Sitemap.css">
+  <link rel="icon" href="images/logo.png" />
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+        <!-- logo -->
+        <img src="Images/logo.png" alt="logo">
+        <!-- navigation bar -->
+        <nav>
+            <ul class = "navbar">
+                <!-- navigation links -->
+                <li><a href="../Student_2/home.html">Home</a></li>
+                <li><a href="../Student_1/products.html">Buy Products</a></li>
+                <li><a href="../Student_2/feedback.html">Feedback Form</a></li>
+                <li><a href="../Student_3/team.html">About Us</a></li>
+                <li><a href="../Student_4/Sitemap.html" class="active">Site Map</a></li>
+                <li><a href="../Student_4/Gallery.html">Gallery</a></li>
+                <li><a href="../Student_3/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>
+  <!-- Sitemap -->
+  <div class="container">
+    <h1>SITEMAP</h1>
+
+    <svg id="sitemap" width="740" height="650" xmlns="http://www.w3.org/2000/svg">
+
+    <!--SPLASH SCREEN-->
+    <a href="../Student_1/Splash_Screen.html">
+      <g class="node-group">
+        <rect x="320" y="15" width="100" height="50" fill="#101010" class="node" data-name="SplashScreen" rx="10" ry="10"/>
+        <text x="330" y="45" font-size="14" fill="white" class="node">Splash Screen</text>
+      </g>
+    </a>
+    <!--SPLASH LINE-->
+    <line x1="370" y1="65" x2="370" y2="105" stroke="black" stroke-width="2" marker-end="url(#main)"/>
+
+    <!--HOME-->
+    <a href="../Student_2/home.html">
+      <g class="node-group">
+        <rect x="320" y="105" width="100" height="50" fill="#101010" class="node" data-name="Home" rx="10" ry="10"/>
+        <text x="353" y="135" font-size="14" fill="white" class="node">Home</text>
+      </g>
+    </a>
+    <!--SPLASH LINE-->
+    <line x1="370" y1="155" x2="370" y2="200" stroke="black" stroke-width="2" marker-start="url(#home1)"/>
+
+
+    <!--HOME ARROW-->
+    <marker id="home1" markerWidth="4" markerHeight="4" refX="3" refY="1.5" orient="270deg" markerUnits="strokeWidth">
+      <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+    </marker>
+    <!--MAIN ARROW-->
+    <marker id="main" markerWidth="4" markerHeight="4" refX="2" refY="1.5" orient="90deg" markerUnits="strokeWidth">
+      <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+    </marker>
+    <!--LEFT ARROW-->
+    <marker id="left" markerWidth="4" markerHeight="4" refX="2" refY="1.5" orient="180deg" markerUnits="strokeWidth">
+      <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+    </marker>
+    <!--UP ARROW-->
+    <marker id="up" markerWidth="4" markerHeight="4" refX="-12" refY="1.5" orient="270deg" markerUnits="strokeWidth">
+      <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+    </marker>
+
+    <!--HORIZONTAL LINE-->
+    <line x1="51" y1="195" x2="686" y2="195" stroke="black" stroke-width="2" />
+    
+    <!--SHOP-->
+    <a href="../Student_1/products.html">
+      <g class="node-group">
+        <rect x="5" y="240" width="100" height="50" fill="#202020" class="node" data-name="Shop" rx="10" ry="10"/>
+        <text x="40" y="269" font-size="14" fill="white">Shop</text>
+      </g>
+    </a>
+    <line x1="52" y1="195" x2="52" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)"/>
+    
+    <!--FEEDBACK-->
+    <a href="../Student_2/feedback.html">
+      <g class="node-group">
+        <rect x="110" y="240" width="100" height="50" fill="#202020" class="node" data-name="Feedback" rx="10" ry="10"/>
+        <text x="133" y="269" font-size="14" fill="white">Feedback</text>
+      </g>
+    </a>
+    <line x1="157" y1="195" x2="157" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)"/>
+    
+    <!--ABOUT-->
+    <a href="../Student_3/team.html">
+      <g class="node-group">
+        <rect x="215" y="240" width="100" height="50" fill="#202020" class="node" data-name="About" rx="10" ry="10"/>
+        <text x="245" y="269" font-size="14" fill="white">About</text>
+      </g>
+    </a>
+    <line x1="262" y1="195" x2="262" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)" />
+    
+    <!--SITEMAP-->
+    <a href="../Student_4/Sitemap.html">
+      <g class="node-group">
+        <rect x="320" y="240" width="100" height="50" fill="#202020" class="node" data-name="Sitemap" rx="10" ry="10"/>
+        <text x="345" y="269" font-size="14" fill="white">Sitemap</text>
+      </g>
+    </a>
+    <line x1="370" y1="195" x2="370" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)" />
+    
+    <!--GALLERY-->
+    <a href="../Student_4/Gallery.html">
+      <g class="node-group">
+        <rect x="425" y="240" width="100" height="50" fill="#202020" class="node" data-name="Gallery" rx="10" ry="10"/>
+        <text x="455" y="269" font-size="14" fill="white">Gallery</text>
+      </g>
+    </a>
+    <line x1="475" y1="195" x2="475" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)" />
+  
+    <!--PROFILE-->
+    <a href="../Student_3/profile.html">
+      <g class="node-group">
+        <rect x="530" y="240" width="100" height="50" fill="#202020" class="node" data-name="Profile" rx="10" ry="10"/>
+        <text x="559" y="269" font-size="14" fill="white">Profile</text>
+      </g>
+    </a>
+    <line x1="580" y1="195" x2="580" y2="240" stroke="black" stroke-width="2" marker-end="url(#main)" />
+    
+    <!--PAGES ARROW-->
+    <marker id="pages" markerWidth="4" markerHeight="4" refX="3" refY="1.5" orient="90deg" markerUnits="strokeWidth">
+      <path d="M0,0 L0,3 L4.5,1.5 z" fill="black"></path>
+    </marker>
+
+    <!--CONNECTING LINE - HOME TO CP-->
+    <line x1="685" y1="195" x2="685" y2="600" stroke="black" stroke-width="2"/>
+
+    <!--CONTENT PAGE 1-->
+    <a href="../Student_1/content.html">
+      <g class="node-group">
+        <rect x="530" y="335" width="100" height="50" fill="#383838" class="node" data-name="Page 1" rx="10" ry="10"/>
+        <text x="540" y="365" font-size="13" fill="white">Content Page 1</text>
+      </g>
+    </a>
+    <line x1="685" y1="360" x2="630" y2="360" stroke="black" stroke-width="2" marker-end="url(#left)"/>
+  
+    <!--CONTENT PAGE 2-->
+    <a href="../Student_2/additional_page.html">
+      <g class="node-group">
+        <rect x="530" y="415" width="100" height="50" fill="#383838" class="node" data-name="Page 2" rx="10" ry="10"/>
+        <text x="540" y="445" font-size="13" fill="white">Content Page 2</text>
+      </g>
+    </a>
+    <line x1="685" y1="440" x2="630" y2="440" stroke="black" stroke-width="2" marker-end="url(#left)"/>
+  
+    <!--CONTENT PAGE 3-->
+    <a href="../Student_3/contentpage.html">
+      <g class="node-group">
+        <rect x="530" y="495" width="100" height="50" fill="#383838" class="node" data-name="Page 3" rx="10" ry="10"/>
+        <text x="540" y="525" font-size="13" fill="white">Content Page 3</text>
+      </g>
+    </a>
+    <line x1="685" y1="520" x2="630" y2="520" stroke="black" stroke-width="2" marker-end="url(#left)"/>
+  
+    <!--CONTENT PAGE 4-->
+    <a href="../Student_4/Content_Page.html">
+      <g class="node-group">
+        <rect x="530" y="575" width="100" height="50" fill="#383838" class="node" data-name="Page 4" rx="10" ry="10"/>
+        <text x="540" y="605" font-size="13" fill="white">Content Page 4</text>
+      </g>
+    </a>
+    <line x1="685" y1="600" x2="630" y2="600" stroke="black" stroke-width="2" marker-end="url(#left)"/>
+
+    <!--PAGE EDITOR-->
+    <a href="/Student_4/Page Editor.html">
+      <g class="node-group">
+        <rect x="215" y="460" width="100" height="50" fill="#202020" class="node" data-name="Editor" rx="10" ry="10"/>
+        <text x="232" y="490" font-size="14" fill="white">Page Editor</text>
+      </g>
+    </a>
+    <line x1="262" y1="290" x2="262" y2="460" stroke="black" stroke-width="2" marker-end="url(#main)"/>
+
+    <!--PAGE EDITOR CONNECTOR LINES-->
+    <!--content page group-->
+    <line x1="475" y1="360" x2="530" y2="360" stroke="black" stroke-width="2"/>
+    <line x1="475" y1="440" x2="530" y2="440" stroke="black" stroke-width="2"/>
+    <line x1="475" y1="520" x2="530" y2="520" stroke="black" stroke-width="2"/>
+    <line x1="475" y1="600" x2="530" y2="600" stroke="black" stroke-width="2"/>
+    <line x1="475" y1="360" x2="475" y2="600" stroke="black" stroke-width="2"/>
+
+    <line x1="475" y1="485" x2="315" y2="485" stroke="black" stroke-width="2" marker-end="url(#left)"/>
+
+    <!--navbar group-->
+    <line x1="51" y1="320" x2="580" y2="320" stroke="black" stroke-width="2" />
+
+    <line x1="52" y1="290" x2="52" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    <line x1="157" y1="290" x2="157" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    <line x1="262" y1="290" x2="262" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    <line x1="370" y1="290" x2="370" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    <line x1="475" y1="290" x2="475" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    <line x1="580" y1="290" x2="580" y2="320" stroke="black" stroke-width="2" marker-end="url(#up)"/>
+    
+    </svg>
+  </div>
+
+  <script></script>
+
+  <footer>
+    <div class="editor">
+        <a href="/Student_4/Page Editor.html">Page editor : Radev Perera</a>
+    </div>
+    <div class="footernavbar">
+        <!-- footer Navigation links-->
+        <ul>
+            <li><a href="/Student_2/home.html">Home</a></li>
+            <li><a href="/Student_3/team.html">About Us</a></li>
+            <li><a href="/Student_4/Sitemap.html">Site Map</a></li>
+            <li><a href="/Student_4/Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="contentfooter">
+        <p>Copyright &copy; 2024 WILD PULSE. All rights reserved</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
